@@ -37,7 +37,16 @@ let score = "100" //string
 let value = Number(score)  // converts string to number
 console.log( typeof value) // number
 
-let scores = "33abc"  //string (with alphanumeric characters)
-let values = Number(scores)  // when a string contains alphanumeric characters, it cannot be converted, resulting in NaN (Not a Number)
-console.log(typeof values)   // number (NaN is of type number in JavaScript)
-console.log(values) // NaN(NOT a NUMBER)
+
+
+let scores = "33abc"  // string containing numbers & letters
+let values = Number(scores)  // conversion fails, result = NaN
+
+console.log(values) // NaN (Not a Number)
+console.log(typeof values)   // number (NaN is considered a number type in JavaScript)
+
+/* strings with only numeric characters convert into numbers ✔
+   non-numeric characters cause conversion to return NaN */
+
+
+// advance type conversion in js:
