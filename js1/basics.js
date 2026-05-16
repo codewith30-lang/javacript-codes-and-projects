@@ -18,19 +18,8 @@ studentCity = "indore"
 
 console.table([account_email,student_name, studentCity, studentID])
 
-// *****data types in js*****
-// 1. string 2. number 3. boolean 4. null 5. undefined 6. symbol(unique and immutable) 7. bigint (for large integers) 
 
-let name = "kanak"  
-let age = 22        
-console.log(typeof name, typeof age)  //string number 
-
-console.log(typeof null)  //object (this is a known bug in js)
-console.log(typeof undefined)  //undefined
-
-//higher level: (no need to understand now)
-console.log(typeof Symbol("id"))  //symbol
-console.log(typeof BigInt(12345678901234567890))  //bigint
+//hello
 
 
 //*****type correction in js*****
@@ -71,6 +60,65 @@ console.log(full_name) // kanakagrawal
 let g= 23
 g++   // let h= g++
 console.log(g)
+
+// *****data types in js*****
+// 1. string 2. number 3. boolean 4. null 5. undefined 6. symbol(unique and immutable) 7. bigint (for large integers) 
+
+
+let name = "kanak"  
+let age = 22        
+console.log(typeof name, typeof age)  //string number 
+
+
+console.log(typeof null)  //object (this is a known bug in js)
+console.log(typeof undefined)  //undefined
+
+
+//higher level: (no need to understand now)
+console.log(typeof Symbol("id"))  //symbol
+console.log(typeof BigInt(12345678901234567890))  //bigint
+
+
+// symbol 
+let sy = Symbol("123")
+let sy1 = Symbol("123") // even if the description is same, they are unique
+console.log(sy===sy1)  // false
+
+// non primitive data types in js
+// 1. object 2. array 3. function
+
+let student = ["kanak", "anisha", "lakshya"] // array 
+
+let obj1 = {    // object
+   name : "knak",
+   age :13
+}
+
+// ***stack and heap memory in js***
+    // stack( stores primitive data type), heap (stores non-primitive data type)
+
+ //stored in stack memory:- 
+let a = 10   // primitive data type stored in stack memory`
+let b = a    // b gets a copy of the value of a
+b=20   
+console.log(a, b)  // changes b to 20, a remains 10
+
+
+// stored in heap memory
+let obj0 = 
+{ name : "kanak",
+   age : 12,}
+
+let obj2 = {
+   name: "laira", 
+   age:13 }
+
+obj2= obj0 // obj2 now references the same object as obj1
+obj2.name = "anisha" 
+
+console.log(obj0,obj2)  // { name: 'anisha', age: 12 } { name: 'anisha', age: 12 }
+// both are same because they reference the same object in heap memory
+
 
 /* 
 node js1/basics.js
