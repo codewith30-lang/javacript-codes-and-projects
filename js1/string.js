@@ -35,7 +35,6 @@ trim()
 [[PrimitiveValue]]: "Johans"
 */
 
-
 /* 
 node js1/string.js
 git add .
