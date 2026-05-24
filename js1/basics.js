@@ -117,6 +117,6 @@ console.log(obj0,obj2)  // { name: 'anisha', age: 12 } { name: 'anisha', age: 12
 /* 
 node js1/basics.js
 git add .
-git commit -m "basics -- (1. const, let and var), 2.type conversion, 3.operators, 4.data types, 5.stack memory and heap memory"
+git commit -m "basics -- 1. const, let and var, 2.type conversion, 3.operators, 4.data types, 5.stack memory and heap memory"
 git push origin main 
 */
