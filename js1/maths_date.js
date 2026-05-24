@@ -100,5 +100,5 @@ local = numeric, normal = alphabetic
 
 /* node js1/maths_date.js
     git add .
-    git commit -m "basics1"
+    git commit -m "maths and date_time"
     git push origin main */
