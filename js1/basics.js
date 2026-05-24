@@ -1,5 +1,5 @@
 
-// *****const, let and var in js*****
+//1) *****const, let and var in js*****
 
 const studentID = 10     // it can't be changed , bec it is a constant
 let account_email = "kanak@gmail.com"
@@ -19,10 +19,8 @@ studentCity = "indore"
 console.table([account_email,student_name, studentCity, studentID])
 
 
-//hello
 
-
-//*****type correction in js*****
+// 2) *****type correction in js*****
 console.log("type correction in js:")
 let score = "100" //string 
 let value = Number(score)  // converts string to number
@@ -40,7 +38,7 @@ console.log(typeof values)   // number (NaN is considered a number type in JavaS
    non-numeric characters cause conversion to return NaN */
 
 
-// *****operators in js*******
+// 3) *****operators in js*******
 let VALUE = 10
 let nega_value = -VALUE
 console.log(nega_value) //-10
@@ -61,31 +59,27 @@ let g= 23
 g++   // let h= g++
 console.log(g)
 
-// *****data types in js*****
+// 4) *****data types in js*****
+
 // 1. string 2. number 3. boolean 4. null 5. undefined 6. symbol(unique and immutable) 7. bigint (for large integers) 
-
-
 let name = "kanak"  
 let age = 22        
 console.log(typeof name, typeof age)  //string number 
 
-
 console.log(typeof null)  //object (this is a known bug in js)
 console.log(typeof undefined)  //undefined
-
 
 //higher level: (no need to understand now)
 console.log(typeof Symbol("id"))  //symbol
 console.log(typeof BigInt(12345678901234567890))  //bigint
-
 
 // symbol 
 let sy = Symbol("123")
 let sy1 = Symbol("123") // even if the description is same, they are unique
 console.log(sy===sy1)  // false
 
-// non primitive data types in js
-// 1. object 2. array 3. function
+// non-primitive data types in js
+   // 1. object 2. array 3. function
 
 let student = ["kanak", "anisha", "lakshya"] // array 
 
@@ -94,7 +88,7 @@ let obj1 = {    // object
    age :13
 }
 
-// ***stack and heap memory in js***
+// 5)***stack and heap memory in js***
     // stack( stores primitive data type), heap (stores non-primitive data type)
 
  //stored in stack memory:- 
@@ -123,6 +117,6 @@ console.log(obj0,obj2)  // { name: 'anisha', age: 12 } { name: 'anisha', age: 12
 /* 
 node js1/basics.js
 git add .
-git commit -m "basics"
+git commit -m "basics -- (1. const, let and var), 2.type conversion, 3.operators, 4.data types, 5.stack memory and heap memory"
 git push origin main 
 */
