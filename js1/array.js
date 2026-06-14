@@ -61,6 +61,7 @@ console.log(Array.of(score1,score2,score3)); // array with values but it is not 
 /* 
 node js1/array.js
 git add .
-git commit -m "basics -- 1. const, let and var, 2.type conversion, 3.operators, 4.data types, 5.stack memory and heap memory"
+git commit -m "array methods"
 git push origin main 
+
 */
